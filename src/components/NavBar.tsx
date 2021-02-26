@@ -7,7 +7,7 @@ import { useMeQuery } from "../generated/graphql";
 interface NavbarProps {}
 
 export const Navbar: React.FC<NavbarProps> = ({}) => {
-  const [{ data, fetching }] = useMeQuery({ requestPolicy: "network-only" });
+  const [{ data, fetching }] = useMeQuery();
   let body = null;
   if (fetching) {
   } else if (data?.me) {
