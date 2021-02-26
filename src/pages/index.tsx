@@ -1,8 +1,8 @@
-import { Navbar } from "../components/Navbar";
+import { NavBar } from "../components/NavBar";
 
 const Index = () => (
   <>
-    <Navbar />
+    <NavBar />
     <div>HELLO world KEKW</div>
   </>
 );

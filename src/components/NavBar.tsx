@@ -4,9 +4,9 @@ import React from "react";
 import NextLink from "next/link";
 import { useMeQuery } from "../generated/graphql";
 
-interface NavbarProps {}
+interface NavBarProps {}
 
-export const Navbar: React.FC<NavbarProps> = ({}) => {
+export const NavBar: React.FC<NavBarProps> = ({}) => {
   const [{ data, fetching }] = useMeQuery();
   let body = null;
   if (fetching) {
